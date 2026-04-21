@@ -1,0 +1,877 @@
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Mantasha Khan – Learn, Earn &amp; Grow Online ✨
+    </title>
+    <meta name="description" content="Join Mantasha Khan Skill Seekers Community. Learn digital skills, earn online, and transform your life." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- ══ META PIXEL CODE ══ -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1689964628832460');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1689964628832460&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ══ END META PIXEL CODE ══ -->
+    <style>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; overflow-x: hidden; }
+      body { font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #1a1a2e; overflow-x: hidden; }
+      .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(6px); }
+      .modal-overlay.active { display: flex; }
+      .privacy-box { background: #ffffff; border: 1px solid rgba(255,100,130,0.35); border-radius: 20px; padding: 32px; max-width: 500px; width: 100%; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+      .modal-close { position: absolute; top: 12px; right: 16px; background: none; border: none; color: #888; font-size: 24px; cursor: pointer; }
+      .modal-close:hover { color: #333; }
+      .privacy-box h3 { color: #ff6482; font-size: 13px; font-weight: 700; margin: 16px 0 5px; }
+      .privacy-box h3:first-of-type { margin-top: 0; }
+      .privacy-box p { color: rgba(0,0,0,0.65); font-size: 12px; line-height: 1.7; }
+      .privacy-footer { margin-top: 14px; font-size: 11px; color: rgba(0,0,0,0.3); }
+      .form-box { background: #ffffff; border: 1px solid rgba(255,100,130,0.3); border-radius: 22px; padding: 32px 28px; max-width: 440px; width: 100%; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,0.2); }
+      .form-box-title { font-size: 18px; font-weight: 800; color: #1a1a2e; text-align: center; margin-bottom: 3px; }
+      .form-box-sub { font-size: 11px; color: rgba(0,0,0,0.4); text-align: center; margin-bottom: 22px; }
+      .fgroup { margin-bottom: 12px; }
+      .fgroup label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: rgba(0,0,0,0.45); margin-bottom: 6px; }
+      .fgroup input, .fgroup select { width: 100%; padding: 11px 14px; background: rgba(0,0,0,0.04); border: 1.5px solid rgba(0,0,0,0.1); border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 13px; color: #1a1a2e; outline: none; transition: all 0.25s; -webkit-appearance: none; }
+      .fgroup input::placeholder { color: rgba(0,0,0,0.25); }
+      .fgroup select option { background: #ffffff; color: #1a1a2e; }
+      .fgroup input:focus, .fgroup select:focus { border-color: #ff6482; background: rgba(255,100,130,0.07); }
+      .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+      .form-send-btn { width: 100%; padding: 13px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; border: none; border-radius: 10px; cursor: pointer; margin-top: 6px; box-shadow: 0 6px 22px rgba(255,100,130,0.35); transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+      .form-send-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,100,130,0.5); }
+      .form-send-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+      .form-status { text-align: center; font-size: 12px; margin-top: 10px; min-height: 16px; color: #22c55e; }
+      .hero { min-height: 100vh; background: linear-gradient(160deg, #faf8ff 0%, #fff0f5 40%, #f8f5ff 100%); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding: 16px 20px 48px; position: relative; overflow: hidden; }
+      .hero::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,100,130,0.12) 0%, transparent 65%); top: -150px; left: 50%; transform: translateX(-50%); animation: orb1 7s ease-in-out infinite; pointer-events: none; }
+      .hero::after { content: ''; position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(160,80,255,0.08) 0%, transparent 65%); bottom: -100px; right: -80px; animation: orb2 9s ease-in-out infinite; pointer-events: none; }
+      @keyframes orb1 { 0%,100%{transform:translateX(-50%) scale(1)} 50%{transform:translateX(-50%) scale(1.15)} }
+      @keyframes orb2 { 0%,100%{transform:scale(1)} 50%{transform:scale(1.15)} }
+      .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,100,130,0.12); border: 1px solid rgba(255,100,130,0.45); color: #d63384; font-size: 13px; font-weight: 700; letter-spacing: 1px; padding: 9px 20px; border-radius: 100px; margin-bottom: 14px; margin-top: 10px; position: relative; z-index: 1; animation: fadeUp 0.7s ease both; }
+      .live-dot { width: 8px; height: 8px; background: #ff6482; border-radius: 50%; animation: liveBlink 1.5s infinite; }
+      @keyframes liveBlink { 0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,100,130,0.5)} 50%{opacity:0.4;box-shadow:0 0 0 6px rgba(255,100,130,0)} }
+      .hero-count { font-size: clamp(1.2rem, 4.5vw, 4rem); font-weight: 900; line-height: 1; white-space: nowrap; position: relative; z-index: 1; animation: fadeUp 0.8s 0.1s ease both; background: linear-gradient(135deg, #d63384 0%, #ff6482 50%, #c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+      .hero-label { font-size: clamp(1rem, 2.8vw, 1.3rem); font-weight: 700; color: #1a1a2e; margin-top: 6px; position: relative; z-index: 1; animation: fadeUp 0.8s 0.15s ease both; }
+      .hero-tagline { font-size: 14px; color: rgba(0,0,0,0.45); margin-top: 6px; letter-spacing: 1px; position: relative; z-index: 1; animation: fadeUp 0.8s 0.2s ease both; }
+      .hero-tagline span { color: rgba(0,0,0,0.2); margin: 0 8px; }
+      .journey-block { position: relative; z-index: 1; margin-top: 16px; width: 100%; max-width: 500px; animation: fadeUp 0.8s 0.25s ease both; }
+      .journey-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,100,130,0.10); border: 1px solid rgba(255,100,130,0.45); color: #d63384; font-size: 13px; font-weight: 700; padding: 8px 20px; border-radius: 100px; margin-bottom: 14px; }
+      .yt-embed { width: 100%; border-radius: 14px; overflow: hidden; aspect-ratio: auto; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 16px 48px rgba(0,0,0,0.15); }
+      .yt-embed img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 14px; }
+      .yt-placeholder { width: 100%; aspect-ratio: 16/9; background: rgba(0,0,0,0.04); border: 2px dashed rgba(255,100,130,0.3); border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: rgba(0,0,0,0.3); font-size: 13px; }
+      @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+      .coach-inner-wrap { width: 100%; max-width: 500px; margin-top: 28px; position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
+      .coach-label { font-size: 24px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #c084fc; margin-bottom: 16px; display: block; }
+      .coach-photo-ring { width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #ff6482, #c084fc); padding: 3px; margin: 0 auto 16px; animation: ringPulse 3s ease-in-out infinite; }
+      @keyframes ringPulse { 0%,100%{box-shadow:0 0 0 0 rgba(255,100,130,0.3)} 50%{box-shadow:0 0 0 12px rgba(255,100,130,0)} }
+      .coach-photo-inner { width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(145deg, #f8f5ff, #fff0f5); display: flex; align-items: center; justify-content: center; font-size: 3rem; overflow: hidden; }
+      .coach-photo-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+      .coach-name { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; background: linear-gradient(135deg, #d63384, #ff6482); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 14px; }
+      .coach-roles { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 18px; }
+      .coach-role { background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.1); color: #1a1a2e; font-size: 14px; font-weight: 600; padding: 9px 18px; border-radius: 100px; }
+      .vision-card { background: rgba(255,100,130,0.08); border: 1px solid rgba(255,100,130,0.25); border-radius: 14px; padding: 18px 22px; max-width: 480px; margin: 0 auto 20px; position: relative; }
+      .vision-card::before { content: '"'; font-size: 5rem; color: rgba(255,100,130,0.15); position: absolute; top: -8px; left: 14px; font-family: Georgia, serif; line-height: 1; }
+      .vision-title { font-size: 13px; font-weight: 700; color: #d63384; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+      .vision-text { font-size: 16px; font-weight: 600; color: #1a1a2e; line-height: 1.55; font-style: italic; }
+      .wa-connect-btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-size: 16px; font-weight: 700; padding: 15px 0; width: 100%; max-width: 420px; border-radius: 100px; border: none; cursor: pointer; box-shadow: 0 5px 20px rgba(255,100,130,0.35); transition: all 0.3s; font-family: 'Poppins', sans-serif; }
+      .wa-connect-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,100,130,0.5); }
+      .stats-vertical { display: flex; flex-direction: column; gap: 0; margin-top: 22px; width: 100%; max-width: 500px; margin-left: auto; margin-right: auto; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; background: #ffffff; }
+      .stat-v-item { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; border-bottom: 1px solid rgba(0,0,0,0.06); text-align: left; }
+      .stat-v-item:last-child { border-bottom: none; }
+      .stat-v-left { display: flex; flex-direction: column; }
+      .stat-v-num { font-size: 1.7rem; font-weight: 900; background: linear-gradient(135deg, #ff6482, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+      .stat-v-lbl { font-size: 12px; color: rgba(0,0,0,0.5); margin-top: 3px; }
+      .stat-v-icon { font-size: 1.8rem; opacity: 0.75; }
+      .testimonials-section { padding: 36px 0 32px; background: #ffffff; overflow: hidden; }
+      .section-header { text-align: center; padding: 0 20px; margin-bottom: 22px; overflow: hidden; }
+      .section-title-main { font-size: clamp(1rem, 4.8vw, 2.8rem); font-weight: 800; color: #1a1a2e; margin-bottom: 8px; white-space: nowrap; max-width: 100%; display: block; }
+      .section-title-main.size-lg { font-size: clamp(1.2rem, 6vw, 2.8rem); }
+      .section-title-main.size-sm { font-size: clamp(1rem, 5vw, 2.6rem); }
+      .section-title-main.size-md { font-size: clamp(1rem, 5vw, 2.6rem); }
+      .section-title-main.size-xl { font-size: clamp(1.4rem, 6.5vw, 3rem); }
+      .highlight { background: linear-gradient(135deg, #ff6482, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+      .section-subtitle { font-size: 15px; font-weight: 500; color: rgba(0,0,0,0.55); }
+      .marquee-outer { overflow: hidden; -webkit-mask: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%); mask: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%); }
+      .marquee-inner { display: flex; gap: 14px; width: max-content; animation: slideX 15s linear infinite; }
+      .marquee-inner:hover { animation-play-state: paused; }
+      @keyframes slideX { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+      .tcard { width: 200px; height: 400px; border-radius: 14px; overflow: hidden; flex-shrink: 0; position: relative; cursor: pointer; }
+      .tcard img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+      .tcard:hover img { transform: scale(1.07); }
+      .tcard::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 60%); }
+      .benefits-section { padding: 36px 20px 32px; background: linear-gradient(160deg, #faf8ff, #fff0f5 50%, #f8f5ff); }
+      .benefits-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 760px; margin: 20px auto 0; }
+      .benefit-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 24px 20px; position: relative; overflow: hidden; transition: all 0.35s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+      .benefit-card:hover { transform: translateY(-4px); border-color: rgba(255,100,130,0.3); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+      .benefit-step { width: 38px; height: 38px; background: linear-gradient(135deg, #ff6482, #c084fc); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: white; margin-bottom: 12px; }
+      .benefit-title { font-size: 17px; font-weight: 700; color: #1a1a2e; margin-bottom: 7px; }
+      .benefit-desc { font-size: 14px; color: rgba(0,0,0,0.55); line-height: 1.6; }
+      .get-started-wrap { text-align: center; margin-top: 24px; }
+      .get-started-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-size: 16px; font-weight: 700; padding: 15px 0; width: 100%; max-width: 420px; border-radius: 100px; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; box-shadow: 0 6px 22px rgba(255,100,130,0.35); transition: all 0.3s; }
+      .get-started-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,100,130,0.5); }
+      .know-coach-section { padding: 36px 20px 32px; background: #ffffff; text-align: center; }
+      .coach-stats-vertical { display: flex; flex-direction: column; gap: 0; max-width: 440px; margin: 0 auto 22px; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; overflow: hidden; background: #ffffff; }
+      .cs-v-item { display: flex; align-items: center; justify-content: space-between; padding: 20px 36px; border-bottom: 1px solid rgba(0,0,0,0.06); }
+      .cs-v-item:last-child { border-bottom: none; }
+      .cs-v-num { font-size: 2rem; font-weight: 900; background: linear-gradient(135deg, #ff6482, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+      .cs-v-lbl { font-size: 14px; color: rgba(0,0,0,0.55); margin-top: 4px; }
+      .cs-v-icon { font-size: 2rem; opacity: 0.85; }
+      .your-time-card { background: linear-gradient(135deg, rgba(255,100,130,0.08), rgba(192,132,252,0.08)); border: 1px solid rgba(255,100,130,0.22); border-radius: 16px; padding: 26px 20px; max-width: 480px; margin: 0 auto; overflow: hidden; box-sizing: border-box; width: 100%; }
+      .your-time-title { font-size: 21px; font-weight: 800; color: #1a1a2e; margin-bottom: 18px; }
+      .your-time-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+      .yt-stat { text-align: center; padding: 16px 10px; background: #ffffff; border-radius: 12px; min-width: 0; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+      .yt-num { font-size: clamp(1.2rem, 4vw, 1.9rem); font-weight: 900; background: linear-gradient(135deg, #ff6482, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; word-break: break-all; }
+      .yt-lbl { font-size: 13px; color: rgba(0,0,0,0.55); margin-top: 6px; }
+      .faq-section { padding: 36px 20px 32px; background: linear-gradient(160deg, #faf8ff, #fff0f5 50%, #f8f5ff); }
+      .faq-list { max-width: 700px; margin: 20px auto 0; }
+      .faq-item { border-bottom: 1px solid rgba(0,0,0,0.08); }
+      .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 16px 6px; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; color: #1a1a2e; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 14px; transition: color 0.2s; }
+      .faq-q:hover { color: #d63384; }
+      .faq-icon { width: 26px; height: 26px; border-radius: 50%; background: rgba(255,100,130,0.1); border: 1.5px solid rgba(255,100,130,0.3); color: #ff6482; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; flex-shrink: 0; transition: all 0.3s; }
+      .faq-item.open .faq-icon { background: #ff6482; border-color: #ff6482; color: white; transform: rotate(45deg); }
+      .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; padding: 0 6px; font-size: 13px; color: rgba(0,0,0,0.5); line-height: 1.7; }
+      .faq-item.open .faq-a { max-height: 160px; padding-bottom: 14px; }
+      .cta-section { padding: 36px 20px 32px; background: #ffffff; }
+      .cta-inner { max-width: 820px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+      .cta-left h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; color: #1a1a2e; margin-bottom: 8px; }
+      .cta-left h2 .grad { background: linear-gradient(135deg, #ff6482, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+      .cta-left p { font-size: 16px; color: rgba(0,0,0,0.55); margin-bottom: 18px; line-height: 1.6; }
+      .how-to-box { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+      .how-to-title { font-size: 17px; font-weight: 700; color: #d63384; margin-bottom: 12px; }
+      .how-to-line { font-size: 16px; color: rgba(0,0,0,0.75); line-height: 2.1; }
+      .how-to-line strong { color: #1a1a2e; }
+      .wa-number-box { display: flex; align-items: center; gap: 8px; background: rgba(37,211,102,0.08); border: 1px solid rgba(37,211,102,0.22); border-radius: 10px; padding: 9px 14px; margin-bottom: 12px; }
+      .wa-number-box span { font-size: 14px; color: #1a1a2e; font-weight: 700; }
+      .wa-msg-btn { display: flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-size: 17px; font-weight: 700; padding: 15px; border-radius: 10px; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 16px rgba(255,100,130,0.3); transition: all 0.3s; width: 100%; margin-bottom: 12px; }
+      .wa-msg-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,100,130,0.45); }
+      .within-box { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 10px; padding: 14px 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+      .within-title { font-size: 15px; color: rgba(0,0,0,0.45); margin-bottom: 10px; }
+      .within-item { display: flex; align-items: center; gap: 8px; font-size: 15px; color: rgba(0,0,0,0.75); padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+      .within-item:last-child { border-bottom: none; }
+      .within-check { width: 20px; height: 20px; background: linear-gradient(135deg, #ff6482, #c084fc); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; color: white; }
+      .cta-right { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 22px 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+      .cta-right-title { font-size: 16px; font-weight: 800; color: #1a1a2e; text-align: center; margin-bottom: 4px; }
+      footer { padding: 24px 20px 36px; background: #f0f2f5; text-align: center; border-top: 1px solid rgba(0,0,0,0.06); }
+      .footer-tagline { font-size: 14px; color: #1a1a2e; margin-bottom: 5px; font-weight: 500; }
+      .footer-sign { font-size: 14px; color: #1a1a2e; margin-bottom: 14px; }
+      footer a { color: rgba(0,0,0,0.5); font-size: 13px; text-decoration: none; transition: color 0.2s; font-weight: 500; }
+      footer a:hover { color: #d63384; }
+      .footer-powered { font-size: 14px; font-weight: 600; color: #1a1a2e; margin-top: 8px; }
+      .sr { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+      .sr.in { opacity: 1; transform: translateY(0); }
+      @media (max-width: 640px) { .benefits-grid { grid-template-columns: 1fr; } .cta-inner { grid-template-columns: 1fr; } .your-time-grid { grid-template-columns: 1fr 1fr; gap: 10px; } .form-box { padding: 26px 18px; } .stats-vertical, .coach-stats-vertical { max-width: 100%; } .wa-connect-btn, .get-started-btn { max-width: 100%; } }
+    </style>
+  <base target="_blank">
+</head>
+  <body>
+    <!-- PRIVACY MODAL -->
+    <div class="modal-overlay" id="privacyModal">
+      <div class="privacy-box">
+        <button class="modal-close" onclick="closeModal('privacyModal')">
+          ×
+        </button>
+        <h3>
+          Information We Collect
+        </h3>
+        <p>
+          We collect information you provide directly to us, such as your name, phone number, and email address when you contact us through WhatsApp or other channels.
+        </p>
+        <h3>
+          How We Use Your Information
+        </h3>
+        <p>
+          Your information is used solely to communicate with you about our training programs, provide customer support, and send updates about courses you've expressed interest in.
+        </p>
+        <h3>
+          Data Protection
+        </h3>
+        <p>
+          We implement appropriate security measures to protect your personal information. Your data is never sold or shared with third parties for marketing purposes.
+        </p>
+        <h3>
+          Your Rights
+        </h3>
+        <p>
+          You have the right to access, correct, or delete your personal information at any time. Contact us to exercise these rights or for any privacy-related concerns.
+        </p>
+        <p class="privacy-footer">
+          By using our services, you agree to this privacy policy. Last updated: December 2024
+        </p>
+      </div>
+    </div>
+    <!-- FORM MODAL -->
+    <div class="modal-overlay" id="formModal">
+      <div class="form-box">
+        <button class="modal-close" onclick="closeModal('formModal')">
+          ×
+        </button>
+        <div class="form-box-title">
+          🚀 Start Your Journey
+        </div>
+        <div class="form-box-sub">
+          Fill details — Mantasha will reach out within 24 hrs
+        </div>
+        <input type="hidden" id="formSource" value="" />
+        <div class="fgroup">
+          <label>
+            Full Name *
+          </label>
+          <input type="text" id="m-name" placeholder="Your full name" />
+        </div>
+        <div class="fgroup">
+          <label>
+            Phone *
+          </label>
+          <input type="tel" id="m-phone" placeholder="Enter 10-digit number" maxlength="10" inputmode="numeric" pattern="[0-9]{10}" />
+        </div>
+        <div class="frow">
+          <div class="fgroup">
+            <label>
+              Age *
+            </label>
+            <input type="number" id="m-age" placeholder="Age" min="15" max="60" />
+          </div>
+          <div class="fgroup">
+            <label>
+              Gender *
+            </label>
+            <select id="m-gender">
+              <option value="">
+                Select
+              </option>
+              <option>
+                Female
+              </option>
+              <option>
+                Male
+              </option>
+              <option>
+                Other
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="fgroup">
+          <label>
+            Profession *
+          </label>
+          <select id="m-profession">
+            <option value="">
+              Select
+            </option>
+            <option>
+              Student
+            </option>
+            <option>
+              Housewife
+            </option>
+            <option>
+              Working Professional
+            </option>
+            <option>
+              Other
+            </option>
+          </select>
+        </div>
+        <button class="form-send-btn" id="sendBtn" onclick="submitForm()">
+          📲 Send to WhatsApp
+        </button>
+        <div class="form-status" id="formStatus">
+        </div>
+      </div>
+    </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badge">
+        <div class="live-dot">
+        </div>
+        🚀 Online Earning Community
+      </div>
+      <div class="hero-count" id="heroCount">
+        Connect with 0 People
+      </div>
+      <div class="hero-label">
+        Rising Together • From Zero to Online Earner
+      </div>
+      <div class="hero-tagline">
+        Learn
+        <span>        •
+</span>
+        Earn
+        <span>        •
+</span>
+        Grow
+      </div>
+      <div class="journey-block">
+        <div class="journey-label">
+          👇 See My Journey 👇
+        </div>
+        <div class="yt-embed" id="ytEmbed">
+          <img src="https://i.ibb.co/r2JkQnw9/IMG-20260420-WA0011.jpg" alt="My Journey" onerror="this.parentElement.innerHTML='<div style='width:100%;aspect-ratio:16/9;background:rgba(0,0,0,0.04);border:2px dashed rgba(255,100,130,0.3);border-radius:14px;display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,0.3);font-size:13px;'>📸 Add photo URL</div>'" />
+        </div>
+      </div>
+      <div class="coach-inner-wrap">
+        <span class="coach-label">        💫 Your Coach
+</span>
+        <h2 class="coach-name">
+          Hi, I'm Tushar Ganvir
+        </h2>
+        <div class="coach-roles">
+          <div class="coach-role">
+            ✅ Entrepreneur
+          </div>
+          <div class="coach-role">
+            💻 Freelancer
+          </div>
+          <div class="coach-role">
+            🎯 Online-Skills Coach
+          </div>
+        </div>
+        <div class="vision-card sr">
+          <div class="vision-title">
+            🎯 My Mission:
+          </div>
+          <div class="vision-text">
+            "Every Woman Deserves Financial Freedom"
+          </div>
+        </div>
+        <button class="wa-connect-btn sr" onclick="openFormModal('Connect Button')">
+          📲 Connect on WhatsApp
+        </button>
+        <div class="stats-vertical sr">
+          <div class="stat-v-item">
+            <div class="stat-v-left">
+              <div class="stat-v-num counter" data-target="3" data-suffix="+">
+                0+
+              </div>
+              <div class="stat-v-lbl">
+                Years of Experience
+              </div>
+            </div>
+            <div class="stat-v-icon">
+              ⭐
+            </div>
+          </div>
+          <div class="stat-v-item">
+            <div class="stat-v-left">
+              <div class="stat-v-num counter" data-target="2000" data-suffix="+">
+                0+
+              </div>
+              <div class="stat-v-lbl">
+                Students Helped
+              </div>
+            </div>
+            <div class="stat-v-icon">
+              👥
+            </div>
+          </div>
+          <div class="stat-v-item">
+            <div class="stat-v-left">
+              <div class="stat-v-num counter" data-target="100000" data-prefix="₹" data-format="full">
+                ₹0
+              </div>
+              <div class="stat-v-lbl">
+                Monthly Earning
+              </div>
+            </div>
+            <div class="stat-v-icon">
+              💰
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+      <div class="section-header sr">
+        <h2 class="section-title-main size-lg">
+          ✨ Real
+          <span class="highlight">          Success Stories
+</span>
+        </h2>
+        <p class="section-subtitle">
+          100% real feedback from real students
+        </p>
+      </div>
+      <div class="marquee-outer">
+        <div class="marquee-inner" id="row1">
+        </div>
+      </div>
+    </section>
+    <!-- BENEFITS -->
+    <section class="benefits-section">
+      <div class="section-header sr">
+        <h2 class="section-title-main size-sm">
+          What Happens When
+          <span class="highlight">          You Join?
+</span>
+        </h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card sr">
+          <div class="benefit-step">
+            1
+          </div>
+          <div class="benefit-title">
+            Instant Connection
+          </div>
+          <p class="benefit-desc">
+            Direct WhatsApp access to me
+          </p>
+        </div>
+        <div class="benefit-card sr" style="transition-delay:.07s">
+          <div class="benefit-step">
+            2
+          </div>
+          <div class="benefit-title">
+            Complete Access
+          </div>
+          <p class="benefit-desc">
+            Proven step-by-step training system
+          </p>
+        </div>
+        <div class="benefit-card sr" style="transition-delay:.12s">
+          <div class="benefit-step">
+            3
+          </div>
+          <div class="benefit-title">
+            Daily Mentorship
+          </div>
+          <p class="benefit-desc">
+            24/7 support &amp; community access
+          </p>
+        </div>
+        <div class="benefit-card sr" style="transition-delay:.17s">
+          <div class="benefit-step">
+            4
+          </div>
+          <div class="benefit-title">
+            Start Earning
+          </div>
+          <p class="benefit-desc">
+            Begin from Week 1 confidently
+          </p>
+        </div>
+      </div>
+      <div class="get-started-wrap sr">
+        <button class="get-started-btn" onclick="openFormModal('Get Started Button')">
+          📲 Get Started Now
+        </button>
+      </div>
+    </section>
+    <!-- KNOW YOUR COACH -->
+    <section class="know-coach-section">
+      <div class="section-header sr">
+        <h2 class="section-title-main size-xl">
+          Know Your
+          <span class="highlight">          Coach
+</span>
+        </h2>
+      </div>
+      <div class="coach-stats-vertical sr">
+        <div class="cs-v-item">
+          <div>
+            <div class="cs-v-num counter" data-target="3" data-suffix="+">
+              0+
+            </div>
+            <div class="cs-v-lbl">
+              Years of Experience
+            </div>
+          </div>
+          <div class="cs-v-icon">
+            ⭐
+          </div>
+        </div>
+        <div class="cs-v-item">
+          <div>
+            <div class="cs-v-num counter" data-target="1000" data-suffix="+">
+              0+
+            </div>
+            <div class="cs-v-lbl">
+              Entrepreneurs Reached
+            </div>
+          </div>
+          <div class="cs-v-icon">
+            👥
+          </div>
+        </div>
+      </div>
+      <div class="your-time-card sr">
+        <div class="your-time-title">
+          🔥 Now it's YOUR time
+        </div>
+        <div class="your-time-grid">
+          <div class="yt-stat">
+            <div class="yt-num counter" data-target="1600000" data-prefix="₹" data-format="full">
+              ₹0
+            </div>
+            <div class="yt-lbl">
+              Earned by Students
+            </div>
+          </div>
+          <div class="yt-stat">
+            <div class="yt-num counter" data-target="500" data-suffix="+">
+              0+
+            </div>
+            <div class="yt-lbl">
+              Earning ₹50K–₹1L
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="section-header sr">
+        <h2 class="section-title-main size-md">
+          Frequently Asked
+          <span class="highlight">          Questions
+</span>
+        </h2>
+      </div>
+      <div class="faq-list sr">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What kind of work will I be doing?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            Digital skills: Website Design, Graphics, Editing, Content Creation, Monetization, etc. 100% legitimate.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is this program legitimate &amp; safe?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            Genuine training. 2000+ students earning consistently. Verify credentials.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How much time daily?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            Just 1-2 hours daily. Flexible for everyone.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            When will I start earning?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            Within 1 month. Sustainable income in 1-2 months.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Any prior experience needed?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            No experience needed! Step-by-step guidance provided.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What support after joining?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            Daily mentorship, 24/7 WhatsApp, weekly calls &amp; community.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Any investment required?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            Nominal fee covers everything. No hidden costs.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I do this alongside job/studies?
+            <span class="faq-icon">            +
+</span>
+          </button>
+          <div class="faq-a">
+            Yes! Designed for busy people. Learn in free time.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <div class="cta-left sr">
+          <h2>
+            Ready to
+            <span class="grad">            Transform Your Life?
+</span>
+          </h2>
+          <p>
+            Join thousands on their journey to financial independence
+          </p>
+          <div class="how-to-box">
+            <div class="how-to-title">
+              📲 How to Start?
+            </div>
+            <div class="how-to-line">
+              Simply message me on WhatsApp:
+            </div>
+            <br />
+            <div class="how-to-line">
+              <strong>              📝 Name:
+</strong>
+              Full Name
+            </div>
+            <div class="how-to-line">
+              <strong>              🎂 Age:
+</strong>
+              Your Age
+            </div>
+            <div class="how-to-line">
+              <strong>              💼 Profession:
+</strong>
+              Current Status
+            </div>
+          </div>
+          <div class="wa-number-box">
+            <span>            📌 Save My Number:
+            <strong>            8793150173
+</strong>
+</span>
+          </div>
+          <button class="wa-msg-btn" onclick="openFormModal('Message Button')">
+            📲 Message on WhatsApp Now
+          </button>
+          <div class="within-box">
+            <div class="within-title">
+              ⏳ Within 24 hours:
+            </div>
+            <div class="within-item">
+              <div class="within-check">
+                ✓
+              </div>
+              📋 Complete Details
+            </div>
+            <div class="within-item">
+              <div class="within-check">
+                ✓
+              </div>
+              🗺 Clear Roadmap
+            </div>
+          </div>
+        </div>
+        <div class="cta-right sr" style="transition-delay:.1s">
+          <div class="cta-right-title">
+            Stay Connected 📸
+          </div>
+          <a href="https://www.instagram.com/mantashakhan10x" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white;font-size:14px;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;transition:all 0.3s;margin-bottom:14px;" onmouseover="this.style.opacity='0.88';this.style.transform='translateY(-2px)'" onmouseout="this.style.opacity='1';this.style.transform='translateY(0)'">          <svg width="17" height="17" viewBox="0 0 24 24" fill="white">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+            </path>
+          </svg>
+          Follow on Instagram
+</a>
+          <div style="text-align:center;margin-top:6px;">
+            <a href="#" onclick="openModal('privacyModal');return false;" style="color:rgba(0,0,0,0.4);font-size:13px;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#d63384'" onmouseout="this.style.color='rgba(0,0,0,0.4)'">            🔒 Privacy Policy
+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-tagline">
+        🌟 Empower with skills • 🌈 Support every vision • 🚀 Dreams to direction
+      </div>
+      <div class="footer-sign">
+        ❤️ With Strength &amp; Sincerity, Mantasha Khan
+      </div>
+      <div class="footer-powered">
+        Powered by
+        <strong>        Alymize 
+</strong>
+      </div>
+    </footer>
+    <script>
+      /* ══════════════════════════════════════
+     CHANGE THESE FOR EVERY NEW CLIENT
+  ══════════════════════════════════════ */
+  const SHEET_URL  = 'https://script.google.com/macros/s/AKfycbyP5ViEqCe6OiuGcSQycYEM4VvcXdnnfvEvYsr4pRLeDkU8BLuz_vflTq890LKenjgk/exec';
+  const YOUTUBE_ID = null; // Not used — image version
+  const WA_NUMBER  = '918793150173'; // 91 + 10 digit number
+
+  /* ══════════════════════════════════════
+     CHANGE: Client's testimonial images
+  ══════════════════════════════════════ */
+  const imgs = [
+    'https://i.ibb.co/FLYkdfwz/1.jpg',
+    'https://i.ibb.co/s9np0rXH/2.jpg',
+    'https://i.ibb.co/qMB0qW38/3.jpg',
+    'https://i.ibb.co/hRXFy5Hx/4.jpg',
+    'https://i.ibb.co/VYRrdXKt/5.jpg',
+    'https://i.ibb.co/VW9srR0h/6.jpg',
+    'https://i.ibb.co/SDq6W1W5/7.jpg'
+  ];
+
+  /* ══ DO NOT CHANGE BELOW THIS LINE ══ */
+
+  function openModal(id)  { document.getElementById(id).classList.add('active'); document.body.style.overflow='hidden'; }
+  function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow=''; }
+  function openFormModal(source) {
+    clearForm();
+    document.getElementById('formSource').value = source || 'Unknown';
+    openModal('formModal');
+  }
+  document.querySelectorAll('.modal-overlay').forEach(o=>{
+    o.addEventListener('click', function(e){ if(e.target===this) closeModal(this.id); });
+  });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ closeModal('formModal'); closeModal('privacyModal'); } });
+
+  function clearForm() {
+    ['m-name','m-phone','m-age','m-gender','m-profession'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('formStatus').textContent='';
+    const btn=document.getElementById('sendBtn');
+    btn.disabled=false; btn.textContent='📲 Send to WhatsApp';
+  }
+
+  document.getElementById('m-phone').addEventListener('input', function(){
+    this.value=this.value.replace(/\D/g,'').slice(0,10);
+  });
+
+  async function submitForm() {
+    const name   = document.getElementById('m-name').value.trim();
+    const phone  = document.getElementById('m-phone').value.trim();
+    const age    = document.getElementById('m-age').value.trim();
+    const gender = document.getElementById('m-gender').value;
+    const prof   = document.getElementById('m-profession').value;
+    const source = document.getElementById('formSource').value;
+
+    if (!name||!phone||!age||!gender||!prof) {
+      document.getElementById('formStatus').style.color='#dc2626';
+      document.getElementById('formStatus').textContent='⚠️ Please fill in all fields.';
+      return;
+    }
+    if (phone.length!==10) {
+      document.getElementById('formStatus').style.color='#dc2626';
+      document.getElementById('formStatus').textContent='⚠️ Phone number must be exactly 10 digits.';
+      return;
+    }
+
+    const btn=document.getElementById('sendBtn');
+    btn.disabled=true; btn.textContent='Opening...';
+    document.getElementById('formStatus').textContent='';
+
+    // Save to Google Sheet
+    saveToSheet({ name, phone, age, gender, profession: prof, source });
+
+    // Fire Meta Pixel Lead event
+    if (typeof fbq !== 'undefined') fbq('track', 'Lead');
+
+    const msg=`Hello Ma'am,
+
+I am interested in this Work. Here are my details:
+
+Name: ${name}
+Phone: ${phone}
+Age: ${age}
+Gender: ${gender}
+Profession: ${prof}
+
+Please share next steps. Thank you!`;
+    setTimeout(()=>{
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');
+      setTimeout(()=>closeModal('formModal'),600);
+    },600);
+  }
+
+  async function saveToSheet(data) {
+    if(!SHEET_URL||SHEET_URL==='YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') return;
+    const params = '?timestamp=' + encodeURIComponent(new Date().toLocaleString('en-IN'))
+      + '&name='       + encodeURIComponent(data.name)
+      + '&phone='      + encodeURIComponent(data.phone)
+      + '&age='        + encodeURIComponent(data.age)
+      + '&gender='     + encodeURIComponent(data.gender)
+      + '&profession=' + encodeURIComponent(data.profession)
+      + '&source='     + encodeURIComponent(data.source);
+    const url = SHEET_URL + params;
+    try { await fetch(url,{method:'GET',mode:'no-cors'}); return; } catch(e){}
+    try {
+      await new Promise(resolve=>{
+        const img=new Image(); img.onload=img.onerror=resolve; img.src=url; setTimeout(resolve,3000);
+      });
+    } catch(e){}
+  }
+
+  const row1=document.getElementById('row1');
+  [...imgs,...imgs].forEach(src=>{ const d=document.createElement('div'); d.className='tcard'; d.innerHTML=`<img src="${src}" alt="Student" loading="lazy"/>`; row1.appendChild(d); });
+
+  function toggleFaq(btn){
+    const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!isOpen) item.classList.add('open');
+  }
+
+  function animateHeroCount(){
+    const el=document.getElementById('heroCount');
+    const target=10000,duration=1600,startTime=performance.now();
+    function easeOutExpo(t){ return t===1?1:1-Math.pow(2,-10*t); }
+    function tick(now){
+      const p=Math.min((now-startTime)/duration,1);
+      el.textContent=`Connect with ${Math.floor(easeOutExpo(p)*target).toLocaleString('en-IN')}+ People`;
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',animateHeroCount); } else { animateHeroCount(); }
+
+  function animateCounter(el){
+    if(el.dataset.animated) return; el.dataset.animated='1';
+    const target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'',prefix=el.dataset.prefix||'';
+    const duration=target>=100000?2000:1400,startTime=performance.now();
+    function easeOutExpo(t){ return t===1?1:1-Math.pow(2,-10*t); }
+    function tick(now){
+      const p=Math.min((now-startTime)/duration,1);
+      el.textContent=prefix+Math.floor(easeOutExpo(p)*target).toLocaleString('en-IN')+suffix;
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const srObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); e.target.querySelectorAll('.counter').forEach(animateCounter); srObs.unobserve(e.target); } });
+  },{threshold:0.12});
+  document.querySelectorAll('.sr').forEach(el=>srObs.observe(el));
+  const cObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ animateCounter(e.target); cObs.unobserve(e.target); } });
+  },{threshold:0.4});
+  document.querySelectorAll('.counter').forEach(el=>{ if(!el.closest('.sr')) cObs.observe(el); });
+    </script>
+  </body>
+</html>    
